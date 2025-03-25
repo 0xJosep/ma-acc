@@ -1,5 +1,4 @@
 // src/App.tsx
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css'
 import Header from './components/Header'
@@ -13,9 +12,11 @@ import Articles from './pages/Articles.tsx'
 import MDSI from './pages/MDSI.tsx'
 import DroughtManagement from './pages/DroughtManagement'
 import MoroccoTechHub from './pages/MoroccoTechHub'
+import Home from './pages/Home'
+import About from './pages/About'
 
 // Home page component to keep all the main page content
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Header />
@@ -33,8 +34,9 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/manifesto" element={<Manifesto />} />
+          <Route path="/about" element={<About />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/mdsi" element={<MDSI />} />
           <Route path="/articles/drought-management" element={<DroughtManagement />} />
