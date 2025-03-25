@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full bg-white px-4 md:px-6 py-4 ">
+    <header className="w-full bg-white px-4 md:px-6 py-4">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
         {/* Left side with logo */}
         <div>
@@ -23,22 +23,22 @@ const Header: React.FC = () => {
         </div>
 
         {/* Right side with buttons */}
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4">
           <Link 
             to="/articles" 
-            className="px-6 py-2 text-black border border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300"
+            className="min-w-[80px] px-3 md:px-6 py-2 text-black border border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 text-center whitespace-nowrap"
           >
             Articles
           </Link>
           <Link 
             to="/manifesto" 
-            className="px-6 py-2 text-black border border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300"
+            className="min-w-[80px] px-3 md:px-6 py-2 text-black border border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 text-center whitespace-nowrap"
           >
             Manifesto
           </Link>
           <button 
             onClick={scrollToFooter}
-            className="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-300"
+            className="min-w-[80px] px-3 md:px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-300 text-center whitespace-nowrap"
           >
             Join Us
           </button>

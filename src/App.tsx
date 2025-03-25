@@ -12,8 +12,7 @@ import Articles from './pages/Articles.tsx'
 import MDSI from './pages/MDSI.tsx'
 import DroughtManagement from './pages/DroughtManagement'
 import MoroccoTechHub from './pages/MoroccoTechHub'
-import Home from './pages/Home'
-import About from './pages/About'
+import About from './pages/About.tsx'
 
 // Home page component to keep all the main page content
 const HomePage = () => {

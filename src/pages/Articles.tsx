@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// This interface will be used when we add actual articles
-interface Article {
-  id: string;
+// Define the interface for our articles
+interface ArticleItem {
+  id: number;
   title: string;
+  description: string;
+  link: string;
   date: string;
-  summary?: string;
-  category?: string;
 }
 
 const Articles: React.FC = () => {
-  const articles = [
+  const articles: ArticleItem[] = [
     {
       id: 3,
       title: "Morocco's Drought Management Framework: A Path to Water Resilience",
