@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Century Schoolbook';
+  src: url('/fonts/CenturySchoolbook.woff2') format('woff2'),
+       url('/fonts/CenturySchoolbook.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
