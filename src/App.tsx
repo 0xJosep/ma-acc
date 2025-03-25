@@ -24,7 +24,6 @@ const HomePage = () => {
       <Context />
       <SocialProof />
       <FAQ />
-      <Footer />
     </>
   )
 }
